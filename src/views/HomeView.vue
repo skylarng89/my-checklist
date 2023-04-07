@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>Todos</h1>
+        <h1>{{ appTitle }}</h1>
 
         <!-- Add the 'AddTodo' component with custom event listeners '@add-todo' and '@error' emitted from the 'AddTodo' component -->
         <AddTodo @add-todo="addTodo" @error="setError" />
@@ -32,7 +32,8 @@ export default {
             todos: JSON.parse(localStorage.getItem("todos") || "[]"),
 
             // Set an empty string to store error message
-            errorMsg: ""
+            errorMsg: "",
+            appTitle: 'myChecklist'
         };
     },
     methods: {
