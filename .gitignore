@@ -1,0 +1,34 @@
+# Node.js
+node_modules/
+package-lock.json
+
+# Build output
+/dist/
+/build/
+/.cache/
+
+# Editor files
+.vscode/
+.idea/
+*.sublime*
+
+# Miscellaneous
+.DS_Store
+Thumbs.db
+.env.local
+.env.development.local
+.env.production.local
+
+# Compiled files
+*.log
+*.pid
+*.gz
+*.tar
+*.zip
+*.csv
+
+# Log files
+log/*
+logs/*
+*.log.*
+*.log-*
