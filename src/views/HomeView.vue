@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>{{ appTitle }}</h1>
+        <h1>{{ pageTitle }}</h1>
 
         <!-- Add the 'AddTodo' component with custom event listeners '@add-todo' and '@error' emitted from the 'AddTodo' component -->
         <AddTodo @add-todo="addTodo" @error="setError" />
@@ -33,7 +33,7 @@ export default {
 
             // Set an empty string to store error message
             errorMsg: "",
-            appTitle: 'myChecklist'
+            pageTitle: 'myChecklist'
         };
     },
     methods: {
