@@ -1,6 +1,9 @@
 <template>
   <footer>
-    Made by <a href="https://github.com/skylarng89">Patrick Aziken</a>
+    Made by
+    <a href="https://github.com/skylarng89" target="_blank">Patrick Aziken</a> |
+    Source code:
+    <a href="https://github.com/skylarng89/my-checklist">myChecklist</a>
   </footer>
 </template>
   
