@@ -1,15 +1,12 @@
 <template>
-    <div>
-        <h1>About</h1>
-        <p>This is a simple Todo app created with Vue 2, Vite, and components.</p>
-    </div>
+  <div>
+    <p>
+      This is a simple app to store your todos. All items are stored in this
+      browser on this computer only and remain there unless you delete them or
+      your clear your browser's storage. There is no support for Cloud
+      synchronization just yet, maybe in the future.<br /><br />No personal
+      identifiable information or analytics is transferred from your computer.
+      Your data is all yours :)
+    </p>
+  </div>
 </template>
-  
-<script>
-export default {}
-</script>
-  
-<style>
-/* Add your styles here */
-</style>
-  
