@@ -10,6 +10,7 @@
         v-else
         :todo="todo"
         @save-todo="(updatedText) => onSaveTodo(index, updatedText)"
+        class="edit-todo"
       />
       <div class="todo-action-btns">
         <!-- If in edit mode show a 'Save' text on the button, if not show 'Edit' -->
@@ -97,8 +98,21 @@
     width: 55%;
     line-height: 1.7;
     padding: 0.5rem 0 0.5rem;
+    display: flex;
+    align-items: center;
   }
   .todo-action-btns {
     padding: 0.5rem;
+  }
+  .edit-input {
+    width: 100%;
+    max-width: 470px;
+    height: 45px;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    padding: 0 1rem;
+    font-family: inherit;
+    font-size: 1.2em;
+    font-weight: 400;
   }
 </style>

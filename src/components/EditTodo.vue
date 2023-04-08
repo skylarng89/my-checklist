@@ -1,7 +1,12 @@
 <template>
   <div>
     <!-- Bind the input value to the 'updatedTodo' data property. The '@blur' and '@keyup.enter' event listeners save the input when the input field loses focus or the user presses the enter key respectively. -->
-    <input v-model="updatedTodo" @blur="onSaveTodo" @keyup.enter="onSaveTodo" />
+    <input
+      v-model="updatedTodo"
+      @blur="onSaveTodo"
+      @keyup.enter="onSaveTodo"
+      class="edit-input"
+    />
 
     <!-- Conditionally display an error message if the user tries to save an empty todo item -->
     <p v-if="errorMsg" class="error">{{ errorMsg }}</p>
@@ -43,6 +48,17 @@
     color: red;
     font-size: 0.8em;
     margin-top: 2px;
+  }
+  .edit-input {
+    width: 100%;
+    max-width: 470px;
+    height: 45px;
+    border: 1px solid #4a4a4a;
+    border-radius: 4px;
+    padding: 0.5rem;
+    font-family: inherit;
+    font-size: 1em;
+    font-weight: 400;
   }
 </style>
   
