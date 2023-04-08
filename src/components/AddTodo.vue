@@ -32,7 +32,7 @@
           this.$emit("add-todo", trimmedTodo);
           this.newTodo = "";
         } else {
-          this.$emit("error", "Please enter a non-empty todo item.");
+          this.$emit("error", "Did you just try adding an empty item?");
         }
       },
       clearError() {

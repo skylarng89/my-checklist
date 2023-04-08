@@ -31,7 +31,7 @@
           this.$emit("save-todo", trimmedTodo);
           this.errorMsg = "";
         } else {
-          this.errorMsg = "Please enter a non-empty todo item.";
+          this.errorMsg = "Did you just try adding an empty item?";
         }
       },
     },
